@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: 自作テンプレートその1・白地
+ * Template Name: 記事一覧
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages and that
@@ -12,36 +12,58 @@
  */
 
 get_header(); ?>
-<div id="main_singl">
 
-<?php
-	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-	<div id="primary" class="content-area">
-		<article class="post">
 
-			<?php
-				// Start the Loop.
-				while ( have_posts() ) : the_post();
+<!-- Main -->
+        <div id="main">
+	        <!-- 導入事例 -->
+	        <article class="post">
+	            <header class="header_top" >
+	                    <div class="title_top">
+	                            <h2>記事一覧</h2>
+	                            <p class="top_text">Lorem ipsum dolor amet nullam consequat etiam feugiat</p>
+	                    </div>
+	            </header>
 
-					// Include the page content template.
-					get_template_part( 'content', 'page' );
+                <section>
+                    <ul class="posts">
+						<?php
+						  $args = array(
+						    'post_type' => 'post',
+						    'posts_per_page' => 10
+						  );
+						  $st_query = new WP_Query( $args );
+						?>
+						<?php if ( $st_query->have_posts() ): ?>
+						  <?php while ( $st_query->have_posts() ) : $st_query->the_post(); ?>
+							<li>
+								<article>
+									<header class="introduction_header">
+										<a href="<?php the_permalink(); ?>">
+											<span class="img_post left">
+												<?php the_post_thumbnail(); ?>
+											</span>
+											<h2>
+												<?php the_title();?>
+											</h2>
+											<div style="line-height: 17px; font-size: 13px;">
+												<?php echo mb_substr($post->post_content, 0, 50, 'UTF-8').'……'; ?>
+											</div>
+										</a>
+									</header>
+								</article>
+							</li>
+						   <?php endwhile; ?>
+						<?php else: ?>
+						<p>新しい記事はありません</p>
+						<?php endif; ?>
+		            </ul>
+		        </section>
+		    </article>
+    	</div>
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if ( comments_open() || get_comments_number() ) {
-						comments_template();
-					}
-				endwhile;
-			?>
-
-		</article><!-- #content -->
-	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
-</div><!-- #main-content -->
 
 <?php
 get_sidebar();
 get_footer();
+

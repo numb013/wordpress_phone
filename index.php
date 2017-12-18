@@ -44,7 +44,7 @@ get_header(); ?>
 
 
 
-    <article class="post simulation_post">
+                <article class="post simulation_post">
                     <header class="header_top">
                             <div class="title_top simulation_title">
                               <h2>料金シュミレーション</h2>
@@ -146,7 +146,7 @@ get_header(); ?>
                                                         <ul>
                                                     <div>
                                             </header>
-                                            <span class="image"><img src="/phone1/img/pic004.jpg" width="100%" alt=""></span>
+                                            <span class="image"><img src="<?php bloginfo('template_directory'); ?>/images/pic001.jpg" width="100%" alt=""></span>
                                     </article>
                                     <article class="mini-introduction mini-post">
                                             <header class='step2'>
@@ -157,7 +157,7 @@ get_header(); ?>
                                                         <ul>
                                                     <div>
                                             </header>
-                                            <span class="image"><img src="/phone1/img/pic004.jpg" width="100%" alt=""></span>
+                                            <span class="image"><img src="<?php bloginfo('template_directory'); ?>/images/pic002.jpg" width="100%" alt=""></span>
                                     </article>
                                     <article class="mini-introduction mini-post">
                                             <header class='step3'>
@@ -168,7 +168,7 @@ get_header(); ?>
                                                         <ul>
                                                     <div>
                                             </header>
-                                            <span class="image"><img src="/phone1/img/pic004.jpg" width="100%" alt=""></span>
+                                            <span class="image"><img src="<?php bloginfo('template_directory'); ?>/images/pic003.jpg" width="100%" alt=""></span>
                                     </article>
 
                                     <article class="mini-introduction mini-post">
@@ -180,7 +180,7 @@ get_header(); ?>
                                                         <ul>
                                                     <div>
                                             </header>
-                                            <span class="image"><img src="/phone1/img/pic004.jpg" width="100%" alt=""></span>
+                                            <span class="image"><img src="<?php bloginfo('template_directory'); ?>/images/pic004.jpg" width="100%" alt=""></span>
                                     </article>
 
 
@@ -214,7 +214,7 @@ get_header(); ?>
                                             <article>
                                                 <header class="introduction_header">
                                                     <span class="img left">
-                                                        <img src="/phone1/img/koe02.jpg" width="100%" alt="">
+                                                        <img src="<?php bloginfo('template_directory'); ?>/images/koe01.jpg" width="100%" alt="">
                                                     </span>
                                                     <h2>
                                                         営業会社の場合
@@ -227,7 +227,7 @@ get_header(); ?>
                                             <article>
                                                 <header class="introduction_header">
                                                     <span class="img left">
-                                                        <img src="/phone1/img/koe02.jpg" width="100%" alt="">
+                                                        <img src="<?php bloginfo('template_directory'); ?>/images/koe02.jpg" width="100%" alt="">
                                                     </span>
                                                     <h2>
                                                         工場の場合
@@ -240,7 +240,7 @@ get_header(); ?>
                                             <article>
                                                 <header class="introduction_header">
                                                     <span class="img left">
-                                                        <img src="/phone1/img/koe02.jpg" width="100%" alt="">
+                                                        <img src="<?php bloginfo('template_directory'); ?>/images/koe03.jpg" width="100%" alt="">
                                                     </span>
                                                     <h2>
                                                         アパレルの場合

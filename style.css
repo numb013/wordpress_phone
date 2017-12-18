@@ -2592,6 +2592,14 @@ Use it to make something cool, have fun, and share what you've learned with othe
                                     float: left;
 				}
 
+				ul.posts article .img_post {
+                                    display: block;
+                                    margin-right: 10px;
+                                    min-width: 4em;
+                                    float: left;
+				}
+
+
                                 .introduction_header h2{
                                     margin: 0 0 5px 0;
                                 }
