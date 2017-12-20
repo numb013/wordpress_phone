@@ -251,167 +251,37 @@ get_header(); ?>
                                         </li>
                                 </ul>
                         </section>
-
-
                     </article>
 
-
-
-                    <!-- 導入事例 -->
-
-
-
-<form action="/phone/Contacts/index" novalidate="novalidate" id="ContactDisplayForm" method="post" accept-charset="utf-8"><div style="display:none;"><input type="hidden" name="_method" value="POST"/></div><article class="post" id='form_area'>
-    <header class="header_top">
-        <div class="title_top">
-            <h2>お問合せ</h2>
-            <p>
-                ご入力いただいた情報をもとに、担当者より連絡いたします。
-                「お問い合わせ内容」「お客様情報」をご入力の上、「確認」ボタンをクリックしてください。
-                「必須」の項目は、必ず入力してください。
-            </p>
-        </div>
-    </header>
-    <section>
-                    <table class="form_table">
-                        <tr>
-                            <th>会社名<span class='required'>必須</span></th>
-                            <td><input name="data[Contact][company_name]" placeholder="会社名" type="text" id="ContactCompanyName" required="required"/></td>
-                        </tr>
-                        <tr>
-                            <th>担当者名<span class='required'>必須</span></th>
-                            <td><input name="data[Contact][contact_name]" placeholder="担当者名" type="text" id="ContactContactName" required="required"/></td>
-                        </tr>
-                            <th>都道府県<span class='required'>必須</span></th>
-                            <td>
-                                <select name="data[Contact][prefecture]" id="ContactPrefecture" required="required">
-<option value="">選択してください</option>
-<option value="1">北海道</option>
-<option value="2">青森県</option>
-<option value="3">岩手県</option>
-<option value="4">宮城県</option>
-<option value="5">秋田県</option>
-<option value="6">山形県</option>
-<option value="7">福島県</option>
-<option value="8">茨城県</option>
-<option value="9">栃木県</option>
-<option value="10">群馬県</option>
-<option value="11">埼玉県</option>
-<option value="12">千葉県</option>
-<option value="13">東京都</option>
-<option value="14">神奈川県</option>
-<option value="15">新潟県</option>
-<option value="16">富山県</option>
-<option value="17">石川県</option>
-<option value="18">福井県</option>
-<option value="19">山梨県</option>
-<option value="20">長野県</option>
-<option value="21">岐阜県</option>
-<option value="22">静岡県</option>
-<option value="23">愛知県</option>
-<option value="24">三重県</option>
-<option value="25">滋賀県</option>
-<option value="26">京都府</option>
-<option value="27">大阪府</option>
-<option value="28">兵庫県</option>
-<option value="29">奈良県</option>
-<option value="30">和歌山県</option>
-<option value="31">鳥取県</option>
-<option value="32">島根県</option>
-<option value="33">岡山県</option>
-<option value="34">広島県</option>
-<option value="35">山口県</option>
-<option value="36">徳島県</option>
-<option value="37">香川県</option>
-<option value="38">愛媛県</option>
-<option value="39">高知県</option>
-<option value="40">福岡県</option>
-<option value="41">佐賀県</option>
-<option value="42">長崎県</option>
-<option value="43">熊本県</option>
-<option value="44">大分県</option>
-<option value="45">宮崎県</option>
-<option value="46">鹿児島県</option>
-<option value="47">沖縄県</option>
-</select>                            </td>
-                        </tr>
-                        <tr>
-                            <th>電話番号<span class='required'>必須</span></th>
-                            <td><input name="data[Contact][phone_number]" placeholder="電話番号" type="text" id="ContactPhoneNumber" required="required"/></td>
-                        </tr>
-                            <th>メールアドレス<span class='required'>必須</span></th>
-                            <td><input name="data[Contact][mail_address]" placeholder="メールアドレス" type="text" id="ContactMailAddress" required="required"/></td>
-                        </tr>
-                        <tr>
-                            <th>契約希望台数</th>
-                            <td><input name="data[Contact][desired_number]" placeholder="契約希望台数" type="text" id="ContactDesiredNumber"/></td>
-                        </tr>
-                            <th>お問合せ内容</th>
-                            <td><textarea name="data[Contact][text]" placeholder="お問い合わせ内容" id="ContactText"></textarea></td>
-                        </tr>
-                    <!--    </tr>
-                            <th>個人情報保護<span class='required'>必須</span></th>
-                            <td>
-                                <select name="data[Contact][prefecture]" id="ContactPrefecture" required="required">
-<option value="">選択してください</option>
-<option value="1">北海道</option>
-<option value="2">青森県</option>
-<option value="3">岩手県</option>
-<option value="4">宮城県</option>
-<option value="5">秋田県</option>
-<option value="6">山形県</option>
-<option value="7">福島県</option>
-<option value="8">茨城県</option>
-<option value="9">栃木県</option>
-<option value="10">群馬県</option>
-<option value="11">埼玉県</option>
-<option value="12">千葉県</option>
-<option value="13">東京都</option>
-<option value="14">神奈川県</option>
-<option value="15">新潟県</option>
-<option value="16">富山県</option>
-<option value="17">石川県</option>
-<option value="18">福井県</option>
-<option value="19">山梨県</option>
-<option value="20">長野県</option>
-<option value="21">岐阜県</option>
-<option value="22">静岡県</option>
-<option value="23">愛知県</option>
-<option value="24">三重県</option>
-<option value="25">滋賀県</option>
-<option value="26">京都府</option>
-<option value="27">大阪府</option>
-<option value="28">兵庫県</option>
-<option value="29">奈良県</option>
-<option value="30">和歌山県</option>
-<option value="31">鳥取県</option>
-<option value="32">島根県</option>
-<option value="33">岡山県</option>
-<option value="34">広島県</option>
-<option value="35">山口県</option>
-<option value="36">徳島県</option>
-<option value="37">香川県</option>
-<option value="38">愛媛県</option>
-<option value="39">高知県</option>
-<option value="40">福岡県</option>
-<option value="41">佐賀県</option>
-<option value="42">長崎県</option>
-<option value="43">熊本県</option>
-<option value="44">大分県</option>
-<option value="45">宮崎県</option>
-<option value="46">鹿児島県</option>
-<option value="47">沖縄県</option>
-</select>                            </td>
-                        </tr>-->
-                        <tr>
-                            <td colspan="2"><input name="home" type="submit" class="form_conf" value="確認"/></td>
-                        </tr>
-                    </table>
-        </form>
+                    <div style="display:none;"><input type="hidden" name="_method" value="POST"/></div>
+                        <article class="post" id='form_area'>
+                            <header class="header_top">
+                                <div class="title_top">
+                                    <h2>お問合せ</h2>
+                                    <p>
+                                        ご入力いただいた情報をもとに、担当者より連絡いたします。
+                                        「お問い合わせ内容」「お客様情報」をご入力の上、「確認」ボタンをクリックしてください。
+                                        「必須」の項目は、必ず入力してください。
+                                    </p>
+                                </div>
+                            </header>
+                            <section>
+                                <div id="slider">
+                                    <?php
+                                        $page = get_page_by_path( '%e3%81%8a%e5%95%8f%e3%81%84%e5%90%88%e3%82%8f%e3%81%9b' );
+                                        if( isset( $page ) ) {
+                                            echo apply_filters( 'the_content', $page->post_content );
+                                        }
+                                    ?>
+                                </div>
+                            </section>
+                        </article>
+                    </div>
 
 
 
-        </div>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 <script>
     //円グラフ

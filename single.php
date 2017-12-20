@@ -29,7 +29,7 @@ while(have_posts()): the_post(); ?>
 		<?php the_title(); ?>
 	</h2>
 	<div class="thumbnail">
-		<?php the_post_thumbnail(); ?>
+		<?php the_post_thumbnail(array(100, 100)); ?>
 	</div>
 	<div class="entry">
 		<div class="entry_main">
@@ -37,7 +37,6 @@ while(have_posts()): the_post(); ?>
 		</div>
 	</div>
 <?php endwhile; endif; ?>
-
 
                 </article>
 
@@ -47,7 +46,7 @@ while(have_posts()): the_post(); ?>
 
 </div>
 
-
+<p><?php if (function_exists(“the_cir_upload_field”)) { the_cir_upload_field(); } ?></p>
 
 <?php
 get_sidebar();

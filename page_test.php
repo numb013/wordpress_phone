@@ -41,13 +41,13 @@ get_header(); ?>
 									<header class="introduction_header">
 										<a href="<?php the_permalink(); ?>">
 											<span class="img_post left">
-												<?php the_post_thumbnail(); ?>
+												<?php the_post_thumbnail(array(100, 100)); ?>
 											</span>
 											<h2>
 												<?php the_title();?>
 											</h2>
 											<div style="line-height: 17px; font-size: 13px;">
-												<?php echo mb_substr($post->post_content, 0, 50, 'UTF-8').'……'; ?>
+<?php echo mb_substr(strip_tags(apply_filters('the_content', $post->post_content)), 0, 50); ?>
 											</div>
 										</a>
 									</header>
